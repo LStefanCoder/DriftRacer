@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Drift : MonoBehaviour { 
+public class Drift_backup : MonoBehaviour { 
 
 //based on https://www.youtube.com/watch?v=BSybcKPQCnc
 
