@@ -23,6 +23,9 @@ public class Wheels : MonoBehaviour
     private float currentBrakeF = 0f;
     private float currentTurnAngle = 0f;
 
+    //own modification
+    private float drag = 0.5f;
+
     private void FixedUpdate()
     {
         currentAcc = acceleration * Input.GetAxis("Vertical");
@@ -36,6 +39,12 @@ public class Wheels : MonoBehaviour
         //a front-wheel drive car
         frontRight.motorTorque = currentAcc;
         frontLeft.motorTorque = currentAcc;
+
+        //own code: adding forward friction see https://docs.unity3d.com/ScriptReference/WheelCollider.html
+        /*frontRight.forwardFriction = drag;
+        frontLeft.forwardFriction = drag;
+        backRight.forwardFriction = drag;
+        backLeft.forwardFriction = drag;*/
 
         //the brake applies to all four wheels
         frontRight.brakeTorque = currentBrakeF;
