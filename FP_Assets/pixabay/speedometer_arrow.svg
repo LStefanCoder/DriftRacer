@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1419"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   sodipodi:docname="speedometer_arrow.svg"
+   inkscape:export-filename="speedometer_arrow.png"
+   inkscape:export-xdpi="1863.3264"
+   inkscape:export-ydpi="1863.3264"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1421"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="5.9651515"
+     inkscape:cx="391.524"
+     inkscape:cy="360.59436"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1416">
+    <linearGradient
+       id="e"
+       x1="224.10001"
+       x2="231.72"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-3.4428941e-4,0.2645831,-0.2645831,-3.4428941e-4,153.03422,33.430408)">
+      <stop
+         stop-color="#c00"
+         offset="0"
+         id="stop21" />
+      <stop
+         stop-color="#e57d7d"
+         offset=".4918"
+         id="stop23" />
+      <stop
+         stop-color="#fff"
+         offset="1"
+         id="stop25" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:url(#e);stroke-width:0.264583"
+       d="m 118.98989,92.679286 -0.002,1.322914 -8.76788,-0.01141 -8.83518,-0.01149 -10.310453,-0.01341 0.0021,-1.322913 z"
+       id="path159" />
+  </g>
+</svg>

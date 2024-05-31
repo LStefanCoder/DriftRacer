@@ -208,6 +208,7 @@ GameObject:
   - component: {fileID: 31920378}
   - component: {fileID: 31920379}
   - component: {fileID: 31920380}
+  - component: {fileID: 31920381}
   m_Layer: 0
   m_Name: CarBody
   m_TagString: Untagged
@@ -346,7 +347,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 31920374}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f44d1733cfd47341b7310923e0502a8, type: 3}
   m_Name: 
@@ -467,6 +468,68 @@ MonoBehaviour:
   Enable_Audio: 0
   Drift_Audio: {fileID: 0}
   car_Controller: {fileID: 0}
+--- !u!114 &31920381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31920374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cd0cbf9e09ae7a478ed45671323bd99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colliders:
+    FRWheel: {fileID: 1479915611}
+    FLWheel: {fileID: 1644155324}
+    RRWheel: {fileID: 1277930187}
+    RLWheel: {fileID: 26230279}
+  wheelMeshes:
+    FRWheel: {fileID: 2032117714}
+    FLWheel: {fileID: 696409854}
+    RRWheel: {fileID: 1592154618}
+    RLWheel: {fileID: 45512456}
+  wheelParticles:
+    FRWheel: {fileID: 0}
+    FLWheel: {fileID: 0}
+    RRWheel: {fileID: 0}
+    RLWheel: {fileID: 0}
+  gasInput: 0
+  brakeInput: 0
+  steeringInput: 0
+  smokePrefab: {fileID: 0}
+  motorPower: 0
+  brakePower: 0
+  slipAngle: 0
+  steeringCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  gasPedal: {fileID: 0}
+  brakePedal: {fileID: 0}
+  leftButton: {fileID: 0}
+  rightButton: {fileID: 0}
 --- !u!1001 &45512454
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -538,6 +601,12 @@ PrefabInstance:
 --- !u!4 &45512455 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 17c2546855909544280e3d16466e046b,
+    type: 3}
+  m_PrefabInstance: {fileID: 45512454}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &45512456 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 17c2546855909544280e3d16466e046b,
     type: 3}
   m_PrefabInstance: {fileID: 45512454}
   m_PrefabAsset: {fileID: 0}
@@ -1176,6 +1245,12 @@ PrefabInstance:
 --- !u!4 &696409853 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 17c2546855909544280e3d16466e046b,
+    type: 3}
+  m_PrefabInstance: {fileID: 696409852}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &696409854 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 17c2546855909544280e3d16466e046b,
     type: 3}
   m_PrefabInstance: {fileID: 696409852}
   m_PrefabAsset: {fileID: 0}
@@ -1931,6 +2006,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1592154616}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &1592154618 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 17c2546855909544280e3d16466e046b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1592154616}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1644155322
 GameObject:
   m_ObjectHideFlags: 0
@@ -2148,6 +2229,12 @@ PrefabInstance:
 --- !u!4 &2032117713 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 17c2546855909544280e3d16466e046b,
+    type: 3}
+  m_PrefabInstance: {fileID: 2032117712}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &2032117714 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 17c2546855909544280e3d16466e046b,
     type: 3}
   m_PrefabInstance: {fileID: 2032117712}
   m_PrefabAsset: {fileID: 0}
