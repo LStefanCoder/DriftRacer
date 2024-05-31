@@ -194,6 +194,11 @@ public class Car_Controller : MonoBehaviour
 			return false;
 	}
 
+    //OWN CODE!!!
+    [Space(15)]
+
+    public TextMeshPro TotalScore;
+
     //private Variables
     private Rigidbody rb; //The rb
     private float Brakes = 0f; //Brakes
@@ -391,6 +396,8 @@ public class Car_Controller : MonoBehaviour
     }
 
     public void Update(){
+        //OWN CODE!!!
+        
         //Scene Settings
         if(Use_Scene_Settings){
             if(Input.GetKeyDown(Scene_Reset_Key)){ //When the reset key is pressed
