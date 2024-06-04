@@ -198,6 +198,8 @@ public class Car_Controller : MonoBehaviour
     [Space(15)]
 
     public TextMeshPro TotalScore;
+    //the total score as a number
+    private int TotalScoreNumber;
 
     //private Variables
     private Rigidbody rb; //The rb
@@ -397,9 +399,11 @@ public class Car_Controller : MonoBehaviour
 
     public void Update(){
         //OWN CODE!!!
-        
+        //https://forum.unity.com/threads/wheel-collider-slip-effects.520674/
+        //if (Wheel_)
+
         //Scene Settings
-        if(Use_Scene_Settings){
+        if (Use_Scene_Settings){
             if(Input.GetKeyDown(Scene_Reset_Key)){ //When the reset key is pressed
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //Restart the current scene
             }
