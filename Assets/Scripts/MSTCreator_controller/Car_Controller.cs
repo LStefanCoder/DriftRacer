@@ -197,9 +197,10 @@ public class Car_Controller : MonoBehaviour
     //OWN CODE!!!
     [Space(15)]
 
-    public TextMeshPro TotalScore;
+    public TMP_Text TotalScore;
     //the total score as a number
     private int TotalScoreNumber;
+    //public Wheel wheel;
 
     //private Variables
     private Rigidbody rb; //The rb
@@ -218,6 +219,9 @@ public class Car_Controller : MonoBehaviour
     [HideInInspector] public float currSpeed; //Current speed
 
     void Start(){
+        //OWN CODE!!!
+        //start with a score of 0
+
         //To Prevent The Car From Toppling When Turning Too Much
         rb = GetComponent<Rigidbody>(); //get rigidbody
         rb.centerOfMass = Center_of_Mass.localPosition; //Set the centre of mass of the rigid body to the centre of mass transform
@@ -370,12 +374,21 @@ public class Car_Controller : MonoBehaviour
 
                 if(tempo < 0.5) tempo = 0.5f;
 
-            if(wheelHit.sidewaysSlip > 0 )	
+            if (wheelHit.sidewaysSlip > 0 )	
                 tempo = (1 + Input.GetAxis("Horizontal") )* Mathf.Abs(wheelHit.sidewaysSlip *handBrakeFrictionMultiplier);
 
                 if(tempo < 0.5) tempo = 0.5f;
 
-            if(wheelHit.sidewaysSlip > .99f || wheelHit.sidewaysSlip < -.99f){
+            //OWN CODE!!!
+            //https://forum.unity.com/threads/wheel-collider-slip-effects.520674/
+            if (wheelHit.sidewaysSlip > 0.2)
+            {
+                //changing textmeshpro text see here: https://forum.unity.com/threads/changing-textmeshpro-text-from-ui-via-script.462250/
+                TotalScoreNumber += 1;
+                TotalScore.text = "Score: " + TotalScoreNumber;
+            }
+
+            if (wheelHit.sidewaysSlip > .99f || wheelHit.sidewaysSlip < -.99f){
                 //handBrakeFriction = tempo * 3;
                 float velocity = 0;
                 handBrakeFriction = Mathf.SmoothDamp(handBrakeFriction,tempo* 3,ref velocity ,0.1f * Time.deltaTime);

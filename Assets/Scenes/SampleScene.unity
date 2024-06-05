@@ -425,7 +425,7 @@ MonoBehaviour:
   HeadLights_On: 0
   Car_Speed_In_KPH: 0
   Car_Speed_In_MPH: 0
-  TotalScore: {fileID: 0}
+  TotalScore: {fileID: 190572208}
   currSpeed: 0
 --- !u!1001 &45512454
 PrefabInstance:
@@ -1003,8 +1003,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.111849494, y: 0, z: 0, w: 0.9937252}
-  m_LocalPosition: {x: -0.04, y: 1.4399998, z: -4.63}
+  m_LocalRotation: {x: 0.11037895, y: 0.025790935, z: -0.002865255, w: 0.99355084}
+  m_LocalPosition: {x: -0.24755691, y: 1.7699997, z: -2.9151902}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2040,8 +2040,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189503477}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0009384355, y: 0.9938496, z: -0.11041216, w: -0.008447111}
-  m_LocalPosition: {x: 0.02799999, y: 1.7699997, z: 5.08}
+  m_LocalRotation: {x: 0.11037895, y: 0.025790935, z: -0.002865255, w: 0.99355084}
+  m_LocalPosition: {x: -0.24755691, y: 1.7699997, z: -2.9151902}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2270,13 +2270,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1480934996}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0.01745245, z: 0, w: 0.99984777}
   m_LocalPosition: {x: -0.04, y: 0.87, z: 1.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 31920375}
-  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 2, z: 0}
 --- !u!1 &1509530241
 GameObject:
   m_ObjectHideFlags: 0
