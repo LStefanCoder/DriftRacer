@@ -200,7 +200,17 @@ public class Car_Controller : MonoBehaviour
     public TMP_Text TotalScore;
     //the total score as a number
     private int TotalScoreNumber;
-    //public Wheel wheel;
+
+    //since the other script is attached to the same game object, I can reference it here
+    //see https://discussions.unity.com/t/help-how-do-i-reference-access-another-script-in-unity-c/156123/2
+    //getting the score calculator script
+    //ScoreCalculator rankingScript = GetComponent<ScoreCalculator>();
+    //these variables make it easier to move the values on the screen
+    private int position1 = 175;
+    private int position2 = 115;
+    private int position3 = 55;
+    private int position4 = -5;
+    private int position5 = -65;
 
     //private Variables
     private Rigidbody rb; //The rb
@@ -218,9 +228,14 @@ public class Car_Controller : MonoBehaviour
     //Hidden Variables (not private, but hidden in inspector)
     [HideInInspector] public float currSpeed; //Current speed
 
+    //OWN CODE!!!
+    public Image UserField;
+    public Image Player1Field;
+    public Image Player2Field;
+    public Image Player3Field;
+    public Image Player4Field;
+
     void Start(){
-        //OWN CODE!!!
-        //start with a score of 0
 
         //To Prevent The Car From Toppling When Turning Too Much
         rb = GetComponent<Rigidbody>(); //get rigidbody
@@ -385,7 +400,7 @@ public class Car_Controller : MonoBehaviour
             {
                 //changing textmeshpro text see here: https://forum.unity.com/threads/changing-textmeshpro-text-from-ui-via-script.462250/
                 TotalScoreNumber += 1;
-                TotalScore.text = "Score: " + TotalScoreNumber;
+                TotalScore.text = TotalScoreNumber.ToString();
             }
 
             if (wheelHit.sidewaysSlip > .99f || wheelHit.sidewaysSlip < -.99f){
@@ -414,6 +429,60 @@ public class Car_Controller : MonoBehaviour
         //OWN CODE!!!
         //https://forum.unity.com/threads/wheel-collider-slip-effects.520674/
         //if (Wheel_)
+
+        if (TotalScoreNumber > 250)
+        {
+            UserField.rectTransform.anchoredPosition = new Vector2(UserField.rectTransform.anchoredPosition.x, position4);
+
+            Player1Field.rectTransform.anchoredPosition = new Vector2(Player1Field.rectTransform.anchoredPosition.x, position1);
+
+            Player2Field.rectTransform.anchoredPosition = new Vector2(Player2Field.rectTransform.anchoredPosition.x, position2);
+
+            Player3Field.rectTransform.anchoredPosition = new Vector2(Player3Field.rectTransform.anchoredPosition.x, position3);
+
+            Player4Field.rectTransform.anchoredPosition = new Vector2(Player4Field.rectTransform.anchoredPosition.x, position5);
+        }
+
+        if (TotalScoreNumber > 570)
+        {
+            UserField.rectTransform.anchoredPosition = new Vector2(UserField.rectTransform.anchoredPosition.x, position3);
+
+            Player1Field.rectTransform.anchoredPosition = new Vector2(Player1Field.rectTransform.anchoredPosition.x, position1);
+
+            Player2Field.rectTransform.anchoredPosition = new Vector2(Player2Field.rectTransform.anchoredPosition.x, position2);
+
+            Player3Field.rectTransform.anchoredPosition = new Vector2(Player3Field.rectTransform.anchoredPosition.x, position4);
+
+            Player4Field.rectTransform.anchoredPosition = new Vector2(Player4Field.rectTransform.anchoredPosition.x, position5);
+        }
+
+        if (TotalScoreNumber > 1040)
+        {
+            UserField.rectTransform.anchoredPosition = new Vector2(UserField.rectTransform.anchoredPosition.x, position2);
+
+            Player1Field.rectTransform.anchoredPosition = new Vector2(Player1Field.rectTransform.anchoredPosition.x, position1);
+
+            Player2Field.rectTransform.anchoredPosition = new Vector2(Player2Field.rectTransform.anchoredPosition.x, position3);
+
+            Player3Field.rectTransform.anchoredPosition = new Vector2(Player3Field.rectTransform.anchoredPosition.x, position4);
+
+            Player4Field.rectTransform.anchoredPosition = new Vector2(Player4Field.rectTransform.anchoredPosition.x, position5);
+        }
+
+        if (TotalScoreNumber > 1430)
+        {
+            UserField.rectTransform.anchoredPosition = new Vector2(UserField.rectTransform.anchoredPosition.x, position1);
+
+            Player1Field.rectTransform.anchoredPosition = new Vector2(Player1Field.rectTransform.anchoredPosition.x, position2);
+
+            Player2Field.rectTransform.anchoredPosition = new Vector2(Player2Field.rectTransform.anchoredPosition.x, position3);
+
+            Player3Field.rectTransform.anchoredPosition = new Vector2(Player3Field.rectTransform.anchoredPosition.x, position4);
+
+            Player4Field.rectTransform.anchoredPosition = new Vector2(Player4Field.rectTransform.anchoredPosition.x, position5);
+        }
+
+        //rankingScript.ChangeImagePositions(TotalScoreNumber);
 
         //Scene Settings
         if (Use_Scene_Settings){

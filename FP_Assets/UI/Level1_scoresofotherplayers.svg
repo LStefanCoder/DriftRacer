@@ -26,13 +26,13 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.74564394"
-     inkscape:cx="244.08433"
-     inkscape:cy="346.00965"
-     inkscape:window-width="1920"
+     inkscape:cx="557.90704"
+     inkscape:cy="559.24816"
+     inkscape:window-width="960"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1"
+     inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
      id="defs2">
@@ -174,7 +174,7 @@
          id="tspan401"
          x="103.68308"
          y="52.161293"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5778px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4">Teaman: 24000</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5778px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4">Teaman: 250</tspan></text>
     <rect
        style="fill:url(#radialGradient5030);stroke:#000000;stroke-width:3;stroke-dasharray:none;fill-opacity:1;stroke-opacity:1;font-variation-settings:normal;opacity:1;vector-effect:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dashoffset:0;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
        id="rect1216"
@@ -196,7 +196,7 @@
          id="tspan1218"
          x="103.68308"
          y="119.58065"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5778px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4">Citizen71: 35000</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5778px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4">Citizen71: 570</tspan></text>
     <rect
        style="fill:url(#radialGradient5090);stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1;font-variation-settings:normal;opacity:1;vector-effect:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dashoffset:0;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
        id="rect1222"
@@ -218,7 +218,7 @@
          id="tspan1224"
          x="103.68308"
          y="188.06451"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5778px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4">Whizzy: 47000</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5778px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4">Whizzy: 1040</tspan></text>
     <rect
        style="fill:url(#radialGradient5113);stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1;font-variation-settings:normal;opacity:1;vector-effect:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dashoffset:0;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
        id="rect1228"
@@ -240,7 +240,7 @@
          id="tspan1230"
          x="103.68308"
          y="257.61292"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5778px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4">Slider: 59000</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5778px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4">Slider: 1430</tspan></text>
     <rect
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:url(#radialGradient7347);fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
        id="rect7345"
