@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Driftscorer_tut : MonoBehaviour
 
-    //based on https://www.youtube.com/watch?v=t3uh70YPvjw
+    /*//based on https://www.youtube.com/watch?v=t3uh70YPvjw
 
     public RigidBody car;
 
@@ -24,7 +24,7 @@ public class Driftscorer_tut : MonoBehaviour
     public Color driftNearStopColor;
     public Color driftEndColor;
 
-    private IEnumerator stopDriftingCoroutine = null;
+    private IEnumerator stopDriftingCoroutine = null;*/
 
 {
     // Start is called before the first frame update
@@ -36,11 +36,11 @@ public class Driftscorer_tut : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ManageDrift();
-        ManageUI();
+        //ManageDrift();
+        //ManageUI();
     }
 
-    void ManageDrift()
+    /*void ManageDrift()
     {
         speed = car.velocity.magnitude;
         driftAngle = Vector3.Angle(car.transform.forward, (car.velocity + car.transform.forward).normalized);
@@ -105,5 +105,5 @@ public class Driftscorer_tut : MonoBehaviour
         factorText.text = driftFactor.ToString("###,###,##0.0") + "X";
         currentScoreText.text = currentScore.ToString("###,###,000");
         driftAngleText.text = driftAngle.ToString("###,###,000");
-    }
+    }*/
 }
