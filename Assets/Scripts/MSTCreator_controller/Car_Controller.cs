@@ -400,7 +400,7 @@ public class Car_Controller : MonoBehaviour
             {
                 //changing textmeshpro text see here: https://forum.unity.com/threads/changing-textmeshpro-text-from-ui-via-script.462250/
                 TotalScoreNumber += 1;
-                TotalScore.text = TotalScoreNumber.ToString();
+                //TotalScore.text = TotalScoreNumber.ToString();
             }
 
             if (wheelHit.sidewaysSlip > .99f || wheelHit.sidewaysSlip < -.99f){
