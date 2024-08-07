@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class OptionsMenu : MonoBehaviour
@@ -29,6 +30,11 @@ public class OptionsMenu : MonoBehaviour
             QualitySettings.SetQualityLevel(2);
         }
 
+    }
+
+    public void GoBack()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
     // Start is called before the first frame update
