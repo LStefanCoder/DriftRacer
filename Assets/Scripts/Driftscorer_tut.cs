@@ -113,4 +113,5 @@ public class Driftscorer_tut : MonoBehaviour
         currentScoreText.text = currentScore.ToString("###,###,000");
         driftAngleText.text = driftAngle.ToString("###,##0") + "°";
     }
+
 }
