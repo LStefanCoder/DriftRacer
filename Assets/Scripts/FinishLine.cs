@@ -23,3 +23,4 @@ public class FinishLine : MonoBehaviour
         Debug.Log("Trigger hit");
     }
 }
+

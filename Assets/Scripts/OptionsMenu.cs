@@ -46,6 +46,9 @@ public class OptionsMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //based on https://discussions.unity.com/t/controlling-master-volume-with-one-slider/163184
+        AudioListener.volume = mainVolume.value;
     }
+
+    //music volume see here: https://www.youtube.com/watch?v=G-JUp8AMEx0
 }
