@@ -34,7 +34,7 @@ public class Driftscorer_tut : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        driftingObject.SetActive(false);
+        //driftingObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -69,7 +69,7 @@ public class Driftscorer_tut : MonoBehaviour
         {
             currentScore += Time.deltaTime * driftAngle * driftFactor;
             driftFactor += Time.deltaTime;
-            driftingObject.SetActive(true);
+            //driftingObject.SetActive(true);
         }
     }
 
@@ -103,7 +103,7 @@ public class Driftscorer_tut : MonoBehaviour
         currentScoreText.color = driftEndedColor;
         yield return new WaitForSeconds(0.5f);
         currentScore = 0;
-        driftingObject.SetActive(false);
+        //driftingObject.SetActive(false);
     }
 
     void ManageUI()
