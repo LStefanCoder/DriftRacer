@@ -5,6 +5,7 @@ using UnityEngine;
 public class HelpMenu : MonoBehaviour
 {
     public GameObject helpMenuCanvas;
+    public GameObject mainCanvas;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,7 @@ public class HelpMenu : MonoBehaviour
             if (helpMenuCanvas.activeSelf == false)
             {
                 helpMenuCanvas.SetActive(true);
+                mainCanvas.SetActive(false);
                 //freezes the gameplay
                 Time.timeScale = 0;
             }
@@ -28,6 +30,7 @@ public class HelpMenu : MonoBehaviour
             else
             {
                 helpMenuCanvas.SetActive(false);
+                mainCanvas.SetActive(true);
                 //resumes the gameplay
                 Time.timeScale = 1;
             }
