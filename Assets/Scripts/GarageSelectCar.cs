@@ -10,6 +10,7 @@ public class GarageSelectCar : MonoBehaviour
     public GameObject buyButton;
 
     static int currentCar;
+    static int selectedCar;
     static int currentTab;
 
     // Start is called before the first frame update
@@ -17,11 +18,14 @@ public class GarageSelectCar : MonoBehaviour
     {
         //at the start of the game, the BMW becomes the default car
         selectedCar = 0;
+        currentCar = 0;
+
+        //greying out the left arrow button when the there is no more windows to the right
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //if (selectedCar == )
     }
 }
