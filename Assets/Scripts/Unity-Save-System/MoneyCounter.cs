@@ -16,7 +16,7 @@ public class MoneyCounter : MonoBehaviour
     private void Update()
     {
         //the text is always updated to the current amount of in-game currency the user has
-        //text1.text = SaveManager.instance.money.ToString();
-        text1.text = "a";
+        text1.text = SaveManager.instance.money.ToString();
+        //text1.text = "a";
     }
 }
