@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
+using TMPro; //own code
 
 public class CarSelection : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class CarSelection : MonoBehaviour
     [Header("Play/Buy Buttons")]
     [SerializeField] private Button play;
     [SerializeField] private Button buy;
-    [SerializeField] private Text priceText;
+    [SerializeField] private TMP_Text priceText;
 
     [Header("Car Attributes")]
     [SerializeField] private int[] carPrices;
@@ -81,3 +82,24 @@ public class CarSelection : MonoBehaviour
         UpdateUI();
     }
 }
+
+
+/*currentCar += _change;
+
+    if (currentCar > transform.childCount - 1)
+    {
+        currentCar = 0;
+    }
+
+    else if (currentCar < 0)
+    {
+        currentCar = transform.childCount - 1;
+    }
+    
+    // Save it if it's unlocked
+    if (SaveManager.instance.carsUnlocked[currentCar])
+    {
+        SaveManager.instance.currentCar = currentCar;
+        SaveManager.instance.Save();
+    }
+    SelectCar(currentCar);*/
