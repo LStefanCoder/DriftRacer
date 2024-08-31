@@ -1,1 +1,4 @@
 cash-register-kaching-sound-effect-125042.mp3: https://pixabay.com/sound-effects/cash-register-kaching-sound-effect-125042/
+engine-47745.mp3: https://pixabay.com/sound-effects/engine-47745/
+crash-7075.mp3: https://pixabay.com/sound-effects/crash-7075/
+automobile-horn-153260.mp3: https://pixabay.com/sound-effects/automobile-horn-153260/
