@@ -20,7 +20,7 @@ public class FinishLine : MonoBehaviour
         
     }
 
-    void FinishLine()
+    void Line()
     {
         mainCanvas.SetActive(false);
         finishCanvas.SetActive(true);
@@ -30,12 +30,12 @@ public class FinishLine : MonoBehaviour
     {
         //unfreezing game
         Time.timeScale = 1;
-        if (SceneManager.GetActiveScene() == "Level1")
+        if (SceneManager.GetActiveScene().name == "Level1")
         {
             SceneManager.LoadScene("Level2");
         }
 
-        if (SceneManager.GetActiveScene() == "Level2")
+        if (SceneManager.GetActiveScene().name == "Level2")
         {
             SceneManager.LoadScene("Main");
         }
@@ -51,7 +51,7 @@ public class FinishLine : MonoBehaviour
             //freezing game
             Time.timeScale = 0;
             //displaying finish screen
-            FinishLine();
+            Line();
         }
     }
 }
