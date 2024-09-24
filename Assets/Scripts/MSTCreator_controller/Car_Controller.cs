@@ -200,6 +200,8 @@ public class Car_Controller : MonoBehaviour
     public TMP_Text TotalScore;
     //the total score as a number
     private int TotalScoreNumber;
+    //this static version makes this value accessible to other scripts
+    public static int TotalScoreValue;
 
     //since the other script is attached to the same game object, I can reference it here
     //see https://discussions.unity.com/t/help-how-do-i-reference-access-another-script-in-unity-c/156123/2
@@ -400,7 +402,8 @@ public class Car_Controller : MonoBehaviour
             {
                 //changing textmeshpro text see here: https://forum.unity.com/threads/changing-textmeshpro-text-from-ui-via-script.462250/
                 TotalScoreNumber += 1;
-                //TotalScore.text = TotalScoreNumber.ToString();
+                TotalScore.text = TotalScoreNumber.ToString();
+                TotalScoreValue = TotalScoreNumber;
             }
 
             if (wheelHit.sidewaysSlip > .99f || wheelHit.sidewaysSlip < -.99f){
