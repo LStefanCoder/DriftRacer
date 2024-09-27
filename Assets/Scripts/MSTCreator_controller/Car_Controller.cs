@@ -237,6 +237,11 @@ public class Car_Controller : MonoBehaviour
     public Image Player3Field;
     public Image Player4Field;
 
+    //playing the sliding sound
+    public AudioSource slidingSource;
+    //this is needed so that the audio source can be played back without restarting every frame
+    private bool isPlaying;
+
     void Start(){
 
         //To Prevent The Car From Toppling When Turning Too Much
@@ -285,6 +290,15 @@ public class Car_Controller : MonoBehaviour
             Horn_Source.gameObject.SetActive(false); 
             Engine_Sound.gameObject.SetActive(false);
         }
+
+        //own code
+        /*if(Enable_Audio && Engine_Sound == null)
+            {
+                Engine_Sound.gameObject.SetActive(true);
+            }*/
+
+        //Engine_Sound.Play();
+
     }
 
     public void FixedUpdate(){
@@ -404,6 +418,15 @@ public class Car_Controller : MonoBehaviour
                 TotalScoreNumber += 1;
                 TotalScore.text = TotalScoreNumber.ToString();
                 TotalScoreValue = TotalScoreNumber;
+                if(!slidingSource.isPlaying)
+                {
+                    slidingSource.Play();
+                }
+                Debug.Log(slidingSource.isPlaying);
+            }
+            else
+            {
+                //slidingSource.Stop();
             }
 
             if (wheelHit.sidewaysSlip > .99f || wheelHit.sidewaysSlip < -.99f){
@@ -432,6 +455,8 @@ public class Car_Controller : MonoBehaviour
         //OWN CODE!!!
         //https://forum.unity.com/threads/wheel-collider-slip-effects.520674/
         //if (Wheel_)
+        //Debug.Log(Engine_Sound.isPlaying);
+
 
         if (TotalScoreNumber > 250)
         {
@@ -596,6 +621,12 @@ public class Car_Controller : MonoBehaviour
 
                 //This actually sets the audio source pitch
                 Engine_Sound.pitch = pitch;
+
+                if(!isPlaying)
+                {
+                   StartCoroutine(playEngineAudio());
+                }
+
             }
 
             if(Enable_Engine_Audio && !Car_Started){
@@ -835,5 +866,15 @@ public class Car_Controller : MonoBehaviour
                 P.Play();
             }
         }
+    }
+
+    //own code
+    IEnumerator playEngineAudio()
+    {
+        isPlaying = true;
+        //the playback line seems to have been absent from the original script, added it
+        Engine_Sound.Play();
+        isPlaying = false;
+        yield return new WaitForSeconds(2);
     }
 }
