@@ -422,7 +422,7 @@ public class Car_Controller : MonoBehaviour
                 {
                     slidingSource.Play();
                 }
-                Debug.Log(slidingSource.isPlaying);
+
             }
             else
             {
@@ -622,10 +622,6 @@ public class Car_Controller : MonoBehaviour
                 //This actually sets the audio source pitch
                 Engine_Sound.pitch = pitch;
 
-                if(!isPlaying)
-                {
-                   StartCoroutine(playEngineAudio());
-                }
 
             }
 
@@ -868,13 +864,4 @@ public class Car_Controller : MonoBehaviour
         }
     }
 
-    //own code
-    IEnumerator playEngineAudio()
-    {
-        isPlaying = true;
-        //the playback line seems to have been absent from the original script, added it
-        Engine_Sound.Play();
-        isPlaying = false;
-        yield return new WaitForSeconds(2);
-    }
 }
