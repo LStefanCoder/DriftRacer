@@ -24,4 +24,9 @@ public class MainMenuScript : MonoBehaviour
         mainMenu.SetActive(true);
         garage.SetActive(false);
     }
+
+    public void quitGame()
+    {
+        Application.Quit();
+    }
 }

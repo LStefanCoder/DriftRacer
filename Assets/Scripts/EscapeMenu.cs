@@ -42,7 +42,7 @@ public class EscapeMenu : MonoBehaviour
     public void Quit()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Main");
     }
 
     public void Resume()
