@@ -23,13 +23,13 @@ public class GarageTabs : MonoBehaviour
 
     public void ActivateCarsMenu()
     {
-        carTab.SetActive(true);
+        //carTab.SetActive(true);
         colorTab.SetActive(false);
     }
 
     public void ActivateColorsMenu()
     {
-        carTab.SetActive(false);
+        //carTab.SetActive(false);
         colorTab.SetActive(true);
     }
 

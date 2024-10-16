@@ -71,6 +71,11 @@ public class FinishLine : MonoBehaviour
             //displaying finish screen
             Line();
 
+            if (finalScore < 250)
+            {
+                winOrLoseText.text = "You lost!";
+            }
+
             if (finalScore > 250)
             {
                 UserField.rectTransform.anchoredPosition = new Vector2(UserField.rectTransform.anchoredPosition.x, position4);
@@ -82,6 +87,8 @@ public class FinishLine : MonoBehaviour
                 Player3Field.rectTransform.anchoredPosition = new Vector2(Player3Field.rectTransform.anchoredPosition.x, position3);
 
                 Player4Field.rectTransform.anchoredPosition = new Vector2(Player4Field.rectTransform.anchoredPosition.x, position5);
+
+                winOrLoseText.text = "You lost!";
             }
 
             if (finalScore > 570)
@@ -95,6 +102,8 @@ public class FinishLine : MonoBehaviour
                 Player3Field.rectTransform.anchoredPosition = new Vector2(Player3Field.rectTransform.anchoredPosition.x, position4);
 
                 Player4Field.rectTransform.anchoredPosition = new Vector2(Player4Field.rectTransform.anchoredPosition.x, position5);
+
+                winOrLoseText.text = "You lost!";
             }
 
             if (finalScore > 1040)
@@ -108,6 +117,8 @@ public class FinishLine : MonoBehaviour
                 Player3Field.rectTransform.anchoredPosition = new Vector2(Player3Field.rectTransform.anchoredPosition.x, position4);
 
                 Player4Field.rectTransform.anchoredPosition = new Vector2(Player4Field.rectTransform.anchoredPosition.x, position5);
+
+                winOrLoseText.text = "You lost!";
             }
 
             if (finalScore > 1430)
