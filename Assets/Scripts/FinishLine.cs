@@ -23,11 +23,15 @@ public class FinishLine : MonoBehaviour
     private int position5 = -96;
 
     private int finalScore;
+    Timer timer;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        //I put the code for the timer into this script, so that I can more conveniently end it when the game ends
+        timer = GameObject.Find("TimerEmpty").GetComponent<Timer>();
+        Debug.Log(timer);
+        timer.startTimer();
     }
 
     // Update is called once per frame
@@ -61,6 +65,7 @@ public class FinishLine : MonoBehaviour
     //inspired by https://www.youtube.com/watch?v=lmbJiV8ZETc
     private void OnTriggerEnter(Collider other)
     {
+        timer.stopTimer();
         finalScore = Car_Controller.TotalScoreValue;
         //only trigger the finish line script for the finish line itself, and not other colliders
         if (other.gameObject.CompareTag("FinishLine"))

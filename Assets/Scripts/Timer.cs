@@ -2,44 +2,64 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class Timer : MonoBehaviour
 {
     //based on https://www.youtube.com/watch?v=hxpUk0qiRGs
 
-    public TMP_Text timerText;
-    static public bool timerOn;
-    private float time;
+    //based on https://medium.com/@eveciana21/creating-a-stopwatch-timer-in-unity-f4dff748030d
+
+    private bool timerActive;
+    private float currentTime;
+    [SerializeField] private TMP_Text timerText;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        currentTime = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(timerOn)
+       if (timerActive)
         {
-            //as long as this script is running, update the time via the built-in deltaTime
-            //time += Time.deltaTime;
+            //always adding the time
+            currentTime = currentTime + Time.deltaTime;
         }
+
+        //splitting up the minutes, seconds and milliseconds to separate strings with the TimeSpan class
+        TimeSpan timespan = TimeSpan.FromSeconds(currentTime);
+
+        //this if statement prevents the timer from annoyingly jumping when the milliseconds part doesn't have three digits
+        if (timespan.Milliseconds == 1000)
+        {
+            timerText.text = timespan.Minutes.ToString() + " : " + timespan.Seconds.ToString() + " : 000";
+        }
+        else if (timespan.Milliseconds.ToString().Length == 1)
+        {
+            timerText.text = timespan.Minutes.ToString() + " : " + timespan.Seconds.ToString() + " : 00" + timespan.Milliseconds.ToString();
+        }
+        else if (timespan.Milliseconds.ToString().Length == 2)
+        {
+            timerText.text = timespan.Minutes.ToString() + " : " + timespan.Seconds.ToString() + " : 0" + timespan.Milliseconds.ToString();
+        }
+        else
+        {
+            timerText.text = timespan.Minutes.ToString() + " : " + timespan.Seconds.ToString() + " : " + timespan.Milliseconds.ToString();
+        }
+        
     }
 
-    void startTimer()
+    public void startTimer()
     {
-        timerOn = true;
+        timerActive = true;
     }
 
-    void endTimer()
+    public void stopTimer()
     {
-        timerOn = false;
-    }
-
-    void updateTimer(float time)
-    {
-        //float mins = Mathf.FloorToInt(time / 60);
-        //float secs = Mathf.FloorToInt(time % 60);
+        currentTime = 0;
+        timerActive = false;
     }
 }
