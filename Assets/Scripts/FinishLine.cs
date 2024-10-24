@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System;
 
 public class FinishLine : MonoBehaviour
 {
@@ -10,20 +11,26 @@ public class FinishLine : MonoBehaviour
     public GameObject finishCanvas;
     public TMP_Text scoreText;
     public TMP_Text winOrLoseText;
+    public TMP_Text timeText;
+    public TMP_Text finalTimeText;
     public TMP_Text UserField;
     public TMP_Text Player1Field;
     public TMP_Text Player2Field;
     public TMP_Text Player3Field;
     public TMP_Text Player4Field;
 
-    private int position1 = 117;
-    private int position2 = 64;
-    private int position3 = 12;
-    private int position4 = -44;
-    private int position5 = -96;
+    private int position1 = 77;
+    private int position2 = 24;
+    private int position3 = -28;
+    private int position4 = -84;
+    private int position5 = -136;
 
+    private string timeString;
+    //private var allAudioSources : AudioSource[];
     private int finalScore;
     Timer timer;
+
+    private AudioSource[] allAudioSources;
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +49,8 @@ public class FinishLine : MonoBehaviour
 
     void Line()
     {
+        //getting the final time string before the main canvas is deactivated
+        timeString = timeText.text;
         mainCanvas.SetActive(false);
         finishCanvas.SetActive(true);
     }
@@ -65,12 +74,15 @@ public class FinishLine : MonoBehaviour
     //inspired by https://www.youtube.com/watch?v=lmbJiV8ZETc
     private void OnTriggerEnter(Collider other)
     {
+        StopAllAudio();
         timer.stopTimer();
         finalScore = Car_Controller.TotalScoreValue;
         //only trigger the finish line script for the finish line itself, and not other colliders
         if (other.gameObject.CompareTag("FinishLine"))
         {
+            timeString = timeText.text;
             scoreText.text = finalScore.ToString();
+            finalTimeText.text = "Your time: " + timeString;
             //freezing game
             Time.timeScale = 0;
             //displaying finish screen
@@ -142,5 +154,28 @@ public class FinishLine : MonoBehaviour
 
         
     }
+
+    //taken from https://discussions.unity.com/t/how-to-stop-all-audio/32919/4
+    private void StopAllAudio()
+    {
+        allAudioSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
+        foreach (AudioSource audioS in allAudioSources)
+        {
+            audioS.Stop();
+        }
+    }
+
+    /*private void StartAllAudio()
+    {
+
+    }
+
+    private void StopAllAudio()
+    {
+        for (var source : AudioSource in allAudioSources)
+        {
+            source.Stop();
+        }
+    }*/
 }
 

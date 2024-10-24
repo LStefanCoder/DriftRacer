@@ -62,4 +62,5 @@ public class Timer : MonoBehaviour
         currentTime = 0;
         timerActive = false;
     }
+
 }
