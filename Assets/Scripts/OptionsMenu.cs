@@ -34,7 +34,7 @@ public class OptionsMenu : MonoBehaviour
 
     public void GoBack()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Main");
     }
 
     // Start is called before the first frame update

@@ -149,6 +149,8 @@ public class FinishLine : MonoBehaviour
                 Player3Field.rectTransform.anchoredPosition = new Vector2(Player3Field.rectTransform.anchoredPosition.x, position4);
 
                 Player4Field.rectTransform.anchoredPosition = new Vector2(Player4Field.rectTransform.anchoredPosition.x, position5);
+
+                winOrLoseText.text = "You won!";
             }
         }
 
