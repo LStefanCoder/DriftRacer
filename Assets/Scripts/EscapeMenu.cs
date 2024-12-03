@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using System;
 
 public class EscapeMenu : MonoBehaviour
 {
     public GameObject escapeMenuCanvas;
     public GameObject helpMenuCanvas;
+
+    private AudioSource[] allAudioSources;
+    private AudioSource engineSource;
 
     // Start is called before the first frame update
     void Start()
@@ -19,16 +23,18 @@ public class EscapeMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (escapeMenuCanvas.activeSelf == false)
+            if (escapeMenuCanvas.activeSelf == false && helpMenuCanvas.activeSelf == false)
             {
                 escapeMenuCanvas.SetActive(true);
+                StopAllAudio();
                 //freezes the gameplay
                 Time.timeScale = 0;
             }
 
-            else
+            else if (escapeMenuCanvas.activeSelf == true && helpMenuCanvas.activeSelf == false)
             {
                 escapeMenuCanvas.SetActive(false);
+                StartAllAudio();
                 //resumes the gameplay
                 Time.timeScale = 1;
             }
@@ -56,5 +62,29 @@ public class EscapeMenu : MonoBehaviour
     {
         escapeMenuCanvas.SetActive(false);
         helpMenuCanvas.SetActive(true);
+    }
+
+
+
+    //taken from https://discussions.unity.com/t/how-to-stop-all-audio/32919/4
+    private void StopAllAudio()
+    {
+        allAudioSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
+        foreach (AudioSource audioS in allAudioSources)
+        {
+            audioS.Stop();
+        }
+    }
+
+    private void StartAllAudio()
+    {
+        allAudioSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
+        foreach (AudioSource audioS in allAudioSources)
+        {
+            if (audioS.name == "EngineSource")
+            {
+                audioS.Play();
+            }
+        }
     }
 }

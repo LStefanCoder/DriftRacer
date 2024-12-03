@@ -197,9 +197,11 @@ public class Car_Controller : MonoBehaviour
     //OWN CODE!!!
     [Space(15)]
 
+    public TMP_Text CurrentScoreText;
     public TMP_Text TotalScore;
     //the total score as a number
     private int TotalScoreNumber;
+    private int CurrentScoreNumber;
     //this static version makes this value accessible to other scripts
     public static int TotalScoreValue;
 
@@ -416,6 +418,8 @@ public class Car_Controller : MonoBehaviour
             {
                 //changing textmeshpro text see here: https://forum.unity.com/threads/changing-textmeshpro-text-from-ui-via-script.462250/
                 TotalScoreNumber += 1;
+                CurrentScoreNumber += 1;
+                CurrentScoreText.text = CurrentScoreNumber.ToString();
                 TotalScore.text = TotalScoreNumber.ToString();
                 TotalScoreValue = TotalScoreNumber;
                 if(!slidingSource.isPlaying)
@@ -423,10 +427,49 @@ public class Car_Controller : MonoBehaviour
                     slidingSource.Play();
                 }
 
+                //adjusting the color of the current score text if it is above certain values
+                //for setting color, see https://stackoverflow.com/questions/29924725/change-color-of-text-during-runtime-unity
+
+                Color col;
+
+                if(CurrentScoreNumber > 50)
+                {
+                    ColorUtility.TryParseHtmlString("#fcf403", out col);
+                    CurrentScoreText.color = col;
+                }
+
+                if (CurrentScoreNumber > 100)
+                {
+                    ColorUtility.TryParseHtmlString("#fcc603", out col);
+                    CurrentScoreText.color = col;
+                }
+
+                if (CurrentScoreNumber > 150)
+                {
+                    ColorUtility.TryParseHtmlString("#fca103", out col);
+                    CurrentScoreText.color = col;
+                }
+
+                if (CurrentScoreNumber > 200)
+                {
+                    ColorUtility.TryParseHtmlString("#fc6203", out col);
+                    CurrentScoreText.color = col;
+                }
+
+                if (CurrentScoreNumber > 250)
+                {
+                    ColorUtility.TryParseHtmlString("#fc1c03", out col);
+                    CurrentScoreText.color = col;
+                }
+
             }
             else
             {
-                //slidingSource.Stop();
+                Color col;
+                CurrentScoreNumber = 0;
+                ColorUtility.TryParseHtmlString("#ffffff", out col);
+                CurrentScoreText.color = col;
+                CurrentScoreText.text = " ";
             }
 
             if (wheelHit.sidewaysSlip > .99f || wheelHit.sidewaysSlip < -.99f){
