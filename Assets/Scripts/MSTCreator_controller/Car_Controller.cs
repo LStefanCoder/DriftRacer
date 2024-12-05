@@ -199,6 +199,7 @@ public class Car_Controller : MonoBehaviour
 
     public TMP_Text CurrentScoreText;
     public TMP_Text TotalScore;
+    public TMP_Text CurrentScoreCompanion;
     //the total score as a number
     private int TotalScoreNumber;
     private int CurrentScoreNumber;
@@ -435,31 +436,41 @@ public class Car_Controller : MonoBehaviour
                 if(CurrentScoreNumber > 50)
                 {
                     ColorUtility.TryParseHtmlString("#fcf403", out col);
+                    CurrentScoreCompanion.text = "Nice drift";
                     CurrentScoreText.color = col;
+                    CurrentScoreCompanion.color = col;
                 }
 
                 if (CurrentScoreNumber > 100)
                 {
                     ColorUtility.TryParseHtmlString("#fcc603", out col);
+                    CurrentScoreCompanion.text = "Good drift";
                     CurrentScoreText.color = col;
+                    CurrentScoreCompanion.color = col;
                 }
 
                 if (CurrentScoreNumber > 150)
                 {
                     ColorUtility.TryParseHtmlString("#fca103", out col);
+                    CurrentScoreCompanion.text = "Very good drift";
                     CurrentScoreText.color = col;
+                    CurrentScoreCompanion.color = col;
                 }
 
                 if (CurrentScoreNumber > 200)
                 {
                     ColorUtility.TryParseHtmlString("#fc6203", out col);
+                    CurrentScoreCompanion.text = "Awesome drift";
                     CurrentScoreText.color = col;
+                    CurrentScoreCompanion.color = col;
                 }
 
                 if (CurrentScoreNumber > 250)
                 {
                     ColorUtility.TryParseHtmlString("#fc1c03", out col);
+                    CurrentScoreCompanion.text = "Huge drift";
                     CurrentScoreText.color = col;
+                    CurrentScoreCompanion.color = col;
                 }
 
             }
@@ -470,6 +481,7 @@ public class Car_Controller : MonoBehaviour
                 ColorUtility.TryParseHtmlString("#ffffff", out col);
                 CurrentScoreText.color = col;
                 CurrentScoreText.text = " ";
+                CurrentScoreCompanion.text = " ";
             }
 
             if (wheelHit.sidewaysSlip > .99f || wheelHit.sidewaysSlip < -.99f){

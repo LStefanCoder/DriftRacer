@@ -21,24 +21,28 @@ public class EscapeMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (helpMenuCanvas.activeSelf == false)
         {
-            if (escapeMenuCanvas.activeSelf == false && helpMenuCanvas.activeSelf == false)
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
-                escapeMenuCanvas.SetActive(true);
-                StopAllAudio();
-                //freezes the gameplay
-                Time.timeScale = 0;
-            }
+                if (escapeMenuCanvas.activeSelf == false)
+                {
+                    escapeMenuCanvas.SetActive(true);
+                    StopAllAudio();
+                    //freezes the gameplay
+                    Time.timeScale = 0;
+                }
 
-            else if (escapeMenuCanvas.activeSelf == true && helpMenuCanvas.activeSelf == false)
-            {
-                escapeMenuCanvas.SetActive(false);
-                StartAllAudio();
-                //resumes the gameplay
-                Time.timeScale = 1;
+                else if (escapeMenuCanvas.activeSelf == true)
+                {
+                    escapeMenuCanvas.SetActive(false);
+                    StartAllAudio();
+                    //resumes the gameplay
+                    Time.timeScale = 1;
+                }
             }
         }
+        
     }
 
     //the next three functions handle the three buttons in the escape menu
