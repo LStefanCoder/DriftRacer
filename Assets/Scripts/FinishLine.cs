@@ -61,7 +61,7 @@ public class FinishLine : MonoBehaviour
         Time.timeScale = 1;
         if (SceneManager.GetActiveScene().name == "Level1")
         {
-            SceneManager.LoadScene("Main");
+            SceneManager.LoadScene("Level2");
         }
 
         if (SceneManager.GetActiveScene().name == "Level2")

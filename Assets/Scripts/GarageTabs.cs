@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GarageTabs : MonoBehaviour
 {
-    public GameObject carTab;
+    public GameObject elementsTab;
     public GameObject colorTab;
 
     // Start is called before the first frame update
@@ -23,13 +23,13 @@ public class GarageTabs : MonoBehaviour
 
     public void ActivateCarsMenu()
     {
-        //carTab.SetActive(true);
+        elementsTab.SetActive(true);
         colorTab.SetActive(false);
     }
 
     public void ActivateColorsMenu()
     {
-        //carTab.SetActive(false);
+        elementsTab.SetActive(false);
         colorTab.SetActive(true);
     }
 
