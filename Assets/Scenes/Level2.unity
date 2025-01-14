@@ -4792,6 +4792,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCanvas: {fileID: 1476465818}
   finishCanvas: {fileID: 0}
+  continueButtonText: {fileID: 0}
   scoreText: {fileID: 0}
   winOrLoseText: {fileID: 0}
   timeText: {fileID: 0}
@@ -39333,6 +39334,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2882241567825447468, guid: 8c30126683bd8474cba778b51cdf6ec3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 107
+      objectReference: {fileID: 0}
+    - target: {fileID: 2882241567825447468, guid: 8c30126683bd8474cba778b51cdf6ec3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.979
+      objectReference: {fileID: 0}
+    - target: {fileID: 2882241567825447468, guid: 8c30126683bd8474cba778b51cdf6ec3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -57.1
       objectReference: {fileID: 0}
     - target: {fileID: 7645880784921925880, guid: 8c30126683bd8474cba778b51cdf6ec3,
         type: 3}

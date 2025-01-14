@@ -9,6 +9,7 @@ public class FinishLine : MonoBehaviour
 {
     public GameObject mainCanvas;
     public GameObject finishCanvas;
+    public TMP_Text continueButtonText;
     public TMP_Text scoreText;
     public TMP_Text winOrLoseText;
     public TMP_Text timeText;
@@ -57,15 +58,28 @@ public class FinishLine : MonoBehaviour
 
     public void onContinue()
     {
+        finalScore = Car_Controller.TotalScoreValue;
+
         //unfreezing game
         Time.timeScale = 1;
+
         if (SceneManager.GetActiveScene().name == "Level1")
         {
-            SceneManager.LoadScene("Level2");
+            if(finalScore < 1430)
+            {
+                //returning to the menu if one lost the game
+                SceneManager.LoadScene("Main");
+            }
+            else
+            {
+                SceneManager.LoadScene("Level2");
+            }
+            
         }
 
         if (SceneManager.GetActiveScene().name == "Level2")
         {
+
             SceneManager.LoadScene("Main");
         }
     }
@@ -91,6 +105,7 @@ public class FinishLine : MonoBehaviour
             if (finalScore < 250)
             {
                 winOrLoseText.text = "You lost!";
+                continueButtonText.text = "Go back";
             }
 
             if (finalScore > 250)
@@ -106,6 +121,7 @@ public class FinishLine : MonoBehaviour
                 Player4Field.rectTransform.anchoredPosition = new Vector2(Player4Field.rectTransform.anchoredPosition.x, position5);
 
                 winOrLoseText.text = "You lost!";
+                continueButtonText.text = "Go back";
             }
 
             if (finalScore > 570)
@@ -121,6 +137,7 @@ public class FinishLine : MonoBehaviour
                 Player4Field.rectTransform.anchoredPosition = new Vector2(Player4Field.rectTransform.anchoredPosition.x, position5);
 
                 winOrLoseText.text = "You lost!";
+                continueButtonText.text = "Go back";
             }
 
             if (finalScore > 1040)
@@ -136,6 +153,7 @@ public class FinishLine : MonoBehaviour
                 Player4Field.rectTransform.anchoredPosition = new Vector2(Player4Field.rectTransform.anchoredPosition.x, position5);
 
                 winOrLoseText.text = "You lost!";
+                continueButtonText.text = "Go back";
             }
 
             if (finalScore > 1430)
@@ -151,6 +169,7 @@ public class FinishLine : MonoBehaviour
                 Player4Field.rectTransform.anchoredPosition = new Vector2(Player4Field.rectTransform.anchoredPosition.x, position5);
 
                 winOrLoseText.text = "You won!";
+                continueButtonText.text = "Next";
             }
         }
 
