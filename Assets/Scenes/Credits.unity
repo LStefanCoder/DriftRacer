@@ -180,8 +180,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u201CKorean_multi-family housing lowpoly\u201D by clon6767 under the
-    Creative Commons Attribution license (https://sketchfab.com/3d-models/korean-multi-family-housing-lowpoly-90edbd3d21d74288876bb812a0ebd164)\r\n\u201Clowpoly
+  m_text: "\u201CHungry Jack's Restaurant (low Poly)\u201D by Jotrain Models under
+    the Creative Commons Attribution-NonCommercial license (https://sketchfab.com/3d-models/hungry-jacks-restaurant-low-poly-690889caa5814304bba1a76e04eb3dc7)
+    \n\u201CKorean_multi-family housing lowpoly\u201D by clon6767 under the Creative
+    Commons Attribution license (https://sketchfab.com/3d-models/korean-multi-family-housing-lowpoly-90edbd3d21d74288876bb812a0ebd164)\r\n\u201Clowpoly
     buildings\u201D by compost the second under the Creative Commons Attribution
     license (https://sketchfab.com/3d-models/lowpoly-buildings-e5ff09506bd44d68a26b06f0ea1dcc56)\r\n\u201CLow-poly
     Building\u201D by Yo.Ri under the Creative Commons Attribution license (https://sketchfab.com/3d-models/low-poly-building-f00c61ef60044c4ebb39815ec155c4c1)\r\n\u201CLow
@@ -203,10 +205,7 @@ MonoBehaviour:
     building\u201D by Amine under the Creative Commons Attribution license (https://sketchfab.com/3d-models/residential-building-2ebd5a213eff4960bbe0a72b8f328e7b)\r\n\u201CRussian
     Building 4k texture low-poly game model\u201D by BlackMonolith under the Creative
     Commons Attribution license (https://sketchfab.com/3d-models/russian-building-4k-texture-low-poly-game-model-ee463020e42a4f6eb66b7090defb8e7b)\r\nSMALLWAREHOUSE2?\r\n\u201CTacos_
-    Props\u201D by Elbolillo under the Creative Commons Attribution license (https://sketchfab.com/3d-models/tacos--props-f8bbafe18488483f8ab79bc52d1edc79)\r\nVarious
-    Low-Poly Street Lights by KMB3D under the Creative Commons Attribution license
-    (https://sketchfab.com/3d-models/various-low-poly-street-lights-1173b0c4d9b0400bbeaafbee0e94ca59)\nSilo
-    1 under the Creative Commons Zero license (https://www.sharetextures.com/models/building/silo-1)"
+    Props\u201D by Elbolillo under the Creative Commons Attribution license (https://sketchfab.com/3d-models/tacos--props-f8bbafe18488483f8ab79bc52d1edc79)\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 88c74a6778329d944a81db5929251a87, type: 2}
   m_sharedMaterial: {fileID: 8001652405596463825, guid: 88c74a6778329d944a81db5929251a87,
@@ -341,9 +340,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u201CSimple trees and bushes pack\u201D by Arch1Yury under the Creative
-    Commons Attribution license (https://blendswap.com/blend/18900)\r\n\u201CConcrete
-    barrier\u201D by GameDevWannabe under the Creative Commons Zero license (https://blendswap.com/blend/22980)\r\n\u201CGrandstand\u201D
+  m_text: "Various Low-Poly Street Lights by KMB3D under the Creative Commons Attribution
+    license (https://sketchfab.com/3d-models/various-low-poly-street-lights-1173b0c4d9b0400bbeaafbee0e94ca59)\nSilo
+    1 under the Creative Commons Zero license (https://www.sharetextures.com/models/building/silo-1)\n\u201CSimple
+    trees and bushes pack\u201D by Arch1Yury under the Creative Commons Attribution
+    license (https://blendswap.com/blend/18900)\r\n\u201CConcrete barrier\u201D by
+    GameDevWannabe under the Creative Commons Zero license (https://blendswap.com/blend/22980)\r\n\u201CGrandstand\u201D
     by MrChimp2313 under the Creative Commons Zero license (https://blendswap.com/blend/5639)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 88c74a6778329d944a81db5929251a87, type: 2}
@@ -408,7 +410,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -78.83777, y: -43.207397, z: -81.43326, w: 25.811249}
+  m_margin: {x: -78.83777, y: -43.207397, z: -81.43326, w: -19.729889}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -561,12 +563,14 @@ RectTransform:
   - {fileID: 1886852762}
   - {fileID: 1168012305}
   - {fileID: 1782923640}
+  - {fileID: 1085512343}
   - {fileID: 2000845542}
   - {fileID: 64868248}
   - {fileID: 121658764}
   - {fileID: 602924255}
   - {fileID: 2059016539}
   - {fileID: 660013514}
+  - {fileID: 1684324003}
   - {fileID: 566266817}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -658,10 +662,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MainMenuScript, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
+      - m_Target: {fileID: 1422527643}
+        m_TargetAssemblyTypeName: Credits, Assembly-CSharp
+        m_MethodName: GoBack
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -742,7 +746,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 917, y: -182.8}
+  m_AnchoredPosition: {x: 917, y: -221.8}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &602924256
@@ -829,7 +833,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -78.83777, y: 2.5627441, z: -81.43326, w: 4.287903}
+  m_margin: {x: -78.83777, y: 8.8246765, z: -81.43326, w: 9.158295}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -877,7 +881,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -15}
+  m_AnchoredPosition: {x: 0, y: -19}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &626757982
@@ -1012,7 +1016,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 917, y: -333.8}
+  m_AnchoredPosition: {x: 917, y: -398.8}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &660013515
@@ -1106,7 +1110,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -78.83777, y: -10.295166, z: -81.43326, w: -5.1864166}
+  m_margin: {x: -78.83777, y: -20.636917, z: -81.43326, w: -24.577194}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1119,6 +1123,141 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 660013513}
+  m_CullTransparentMesh: 1
+--- !u!1 &1085512342
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1085512343}
+  - component: {fileID: 1085512345}
+  - component: {fileID: 1085512344}
+  m_Layer: 5
+  m_Name: SoundsHeading
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1085512343
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085512342}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 278348943}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 900.1, y: -472.6}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1085512344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085512342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Sounds
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 88c74a6778329d944a81db5929251a87, type: 2}
+  m_sharedMaterial: {fileID: 8001652405596463825, guid: 88c74a6778329d944a81db5929251a87,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 25
+  m_fontSizeBase: 25
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -45.713226, y: 0, z: -45.43213, w: 20.383728}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1085512345
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085512342}
   m_CullTransparentMesh: 1
 --- !u!1 &1143262322
 GameObject:
@@ -1200,7 +1339,7 @@ GameObject:
   - component: {fileID: 1168012307}
   - component: {fileID: 1168012306}
   m_Layer: 5
-  m_Name: CarModelsHeading (1)
+  m_Name: UIHeading
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1222,7 +1361,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 900.1, y: -207.4}
+  m_AnchoredPosition: {x: 900.1, y: -246.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1168012306
@@ -1452,7 +1591,7 @@ GameObject:
   - component: {fileID: 1422527644}
   - component: {fileID: 1422527643}
   m_Layer: 0
-  m_Name: CreditsEmpty
+  m_Name: ScriptEmpty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1611,7 +1750,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 197.3, y: -48}
+  m_AnchoredPosition: {x: 197.3, y: -76}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1570662998
@@ -1849,6 +1988,145 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1634886481}
   m_CullTransparentMesh: 1
+--- !u!1 &1684324002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1684324003}
+  - component: {fileID: 1684324005}
+  - component: {fileID: 1684324004}
+  m_Layer: 5
+  m_Name: SoundsText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1684324003
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684324002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 278348943}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 917, y: -520.8}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1684324004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684324002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Engine 47745 by Eponn (Freesound) under the Pixabay Content License (https://pixabay.com/sound-effects/engine-47745/)\r\nNissan
+    Maxima handbrake turn (04-25-2009) by audible-edge (Freesound) under the Pixabay
+    Content License (https://pixabay.com/sound-effects/nissan-maxima-handbrake-turn-04-25-2009-6098/)
+    \r\ncrash by Gemesil (Freesound) under the Pixabay Content License (https://pixabay.com/sound-effects/crash-7075/)\r\nAutomobile
+    Horn by Universfield under the Pixabay Content License (https://pixabay.com/sound-effects/automobile-horn-153260/)"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 88c74a6778329d944a81db5929251a87, type: 2}
+  m_sharedMaterial: {fileID: 8001652405596463825, guid: 88c74a6778329d944a81db5929251a87,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 8
+  m_fontSizeBase: 8
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -78.83777, y: -17.617035, z: -81.43326, w: -29.814377}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1684324005
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684324002}
+  m_CullTransparentMesh: 1
 --- !u!1 &1782923639
 GameObject:
   m_ObjectHideFlags: 0
@@ -1861,7 +2139,7 @@ GameObject:
   - component: {fileID: 1782923642}
   - component: {fileID: 1782923641}
   m_Layer: 5
-  m_Name: CarModelsHeading (2)
+  m_Name: TexturesHeading
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1883,7 +2161,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 900.1, y: -289.3}
+  m_AnchoredPosition: {x: 900.1, y: -349.7}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1782923641
@@ -2018,7 +2296,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 900.1, y: -154}
+  m_AnchoredPosition: {x: 900.1, y: -196.4}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1886852763
@@ -2153,7 +2431,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 187, y: -222.9}
+  m_AnchoredPosition: {x: 187, y: -255}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2000845543
@@ -2210,8 +2488,7 @@ MonoBehaviour:
     license (https://sketchfab.com/3d-models/game-ready-city-building-2bd7122c0f774cb48565187848154436)
     \r\n\u201CGame Ready City Buildings\u201D by ModelMaker under the Creative Commons
     Attribution license (https://sketchfab.com/3d-models/game-ready-city-buildings-12ac98aa701548adbfa463157f05f6cf)
-    \r\n\u201CHungry Jack's Restaurant (low Poly)\u201D by Jotrain Models under the
-    Creative Commons Attribution-NonCommercial license (https://sketchfab.com/3d-models/hungry-jacks-restaurant-low-poly-690889caa5814304bba1a76e04eb3dc7) "
+    \r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 88c74a6778329d944a81db5929251a87, type: 2}
   m_sharedMaterial: {fileID: 8001652405596463825, guid: 88c74a6778329d944a81db5929251a87,
@@ -2275,7 +2552,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -78.83777, y: -145.65329, z: -81.43326, w: -322.67813}
+  m_margin: {x: -78.83777, y: -145.65329, z: -81.43326, w: -299.35474}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2323,7 +2600,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 917, y: -233.6}
+  m_AnchoredPosition: {x: 917, y: -274.7}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2059016540
@@ -2348,7 +2625,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Palamecia Titling Font by Raymond Larabie under a \u201Ccustom Typodermic
     Desktop EULA 2023\u201D and the 1001Fonts general font usage terms (https://www.1001fonts.com/palamecia-titling-font.html)\nKenney
-    UI Pack under the Creative Commons Zero license (https://kenney.nl/assets/ui-pack) "
+    UI Pack under the Creative Commons Zero license (https://kenney.nl/assets/ui-pack)
+    \nKeyboard Computer Hardware Device 7256457 under the Pixabay Content License
+    (https://pixabay.com/vectors/keyboard-computer-hardware-device-7256457/)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 88c74a6778329d944a81db5929251a87, type: 2}
   m_sharedMaterial: {fileID: 8001652405596463825, guid: 88c74a6778329d944a81db5929251a87,
@@ -2412,7 +2691,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -78.83777, y: 2.5627441, z: -81.43326, w: -5.8631287}
+  m_margin: {x: -78.83777, y: 2.5627441, z: -81.43326, w: -27.474731}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

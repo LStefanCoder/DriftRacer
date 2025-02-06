@@ -512,8 +512,30 @@ public class Car_Controller : MonoBehaviour
         //if (Wheel_)
         //Debug.Log(Engine_Sound.isPlaying);
 
+        //since the two levels have different opponent scores, I assign different values to the variables
 
-        if (TotalScoreNumber > 250)
+        int score1;
+        int score2;
+        int score3;
+        int score4;
+
+        if (SceneManager.GetActiveScene().name == "Level1")
+        {
+            score1 = 250;
+            score2 = 570;
+            score3 = 1040;
+            score4 = 1430;
+        }
+
+        else
+        {
+            score1 = 1110;
+            score2 = 1562;
+            score3 = 1875;
+            score4 = 2058;
+        }
+
+        if (TotalScoreNumber > score1)
         {
             UserField.rectTransform.anchoredPosition = new Vector2(UserField.rectTransform.anchoredPosition.x, position4);
 
@@ -526,7 +548,7 @@ public class Car_Controller : MonoBehaviour
             Player4Field.rectTransform.anchoredPosition = new Vector2(Player4Field.rectTransform.anchoredPosition.x, position5);
         }
 
-        if (TotalScoreNumber > 570)
+        if (TotalScoreNumber > score2)
         {
             UserField.rectTransform.anchoredPosition = new Vector2(UserField.rectTransform.anchoredPosition.x, position3);
 
@@ -539,7 +561,7 @@ public class Car_Controller : MonoBehaviour
             Player4Field.rectTransform.anchoredPosition = new Vector2(Player4Field.rectTransform.anchoredPosition.x, position5);
         }
 
-        if (TotalScoreNumber > 1040)
+        if (TotalScoreNumber > score3)
         {
             UserField.rectTransform.anchoredPosition = new Vector2(UserField.rectTransform.anchoredPosition.x, position2);
 
@@ -552,7 +574,7 @@ public class Car_Controller : MonoBehaviour
             Player4Field.rectTransform.anchoredPosition = new Vector2(Player4Field.rectTransform.anchoredPosition.x, position5);
         }
 
-        if (TotalScoreNumber > 1430)
+        if (TotalScoreNumber > score4)
         {
             UserField.rectTransform.anchoredPosition = new Vector2(UserField.rectTransform.anchoredPosition.x, position1);
 

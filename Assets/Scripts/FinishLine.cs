@@ -19,6 +19,7 @@ public class FinishLine : MonoBehaviour
     public TMP_Text Player2Field;
     public TMP_Text Player3Field;
     public TMP_Text Player4Field;
+    public GameObject instructionText;
 
     private int position1 = 77;
     private int position2 = 24;
@@ -40,12 +41,27 @@ public class FinishLine : MonoBehaviour
         timer = GameObject.Find("TimerEmpty").GetComponent<Timer>();
         Debug.Log(timer);
         timer.startTimer();
+
+        StartCoroutine(deactivateInstruction(5));
+    }
+
+    private IEnumerator deactivateInstruction(int time)
+    {
+        yield return new WaitForSeconds(time);
+        instructionText.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        //this code is valid for both level 1 and 2
+        //deactivating the instruction text after 5 seconds of the game
+        //based on https://discussions.unity.com/t/how-to-execute-code-after-x-seconds/168749/2
+
+        //run a corouting which deactivates the instruction
+
         
+
     }
 
     void Line()
@@ -65,7 +81,7 @@ public class FinishLine : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name == "Level1")
         {
-            if(finalScore < 1430)
+            if (finalScore < 1430)
             {
                 //returning to the menu if one lost the game
                 SceneManager.LoadScene("Main");
@@ -102,13 +118,34 @@ public class FinishLine : MonoBehaviour
             //displaying finish screen
             Line();
 
-            if (finalScore < 250)
+            int score1;
+            int score2;
+            int score3;
+            int score4;
+
+            if (SceneManager.GetActiveScene().name == "Level1")
+            {
+                score1 = 250;
+                score2 = 570;
+                score3 = 1040;
+                score4 = 1430;
+            }
+
+            else
+            {
+                score1 = 1110;
+                score2 = 1562;
+                score3 = 1875;
+                score4 = 2058;
+            }
+
+            if (finalScore < score1)
             {
                 winOrLoseText.text = "You lost!";
                 continueButtonText.text = "Go back";
             }
 
-            if (finalScore > 250)
+            if (finalScore > score1)
             {
                 UserField.rectTransform.anchoredPosition = new Vector2(UserField.rectTransform.anchoredPosition.x, position4);
 
@@ -124,7 +161,7 @@ public class FinishLine : MonoBehaviour
                 continueButtonText.text = "Go back";
             }
 
-            if (finalScore > 570)
+            if (finalScore > score2)
             {
                 UserField.rectTransform.anchoredPosition = new Vector2(UserField.rectTransform.anchoredPosition.x, position3);
 
@@ -140,7 +177,7 @@ public class FinishLine : MonoBehaviour
                 continueButtonText.text = "Go back";
             }
 
-            if (finalScore > 1040)
+            if (finalScore > score3)
             {
                 UserField.rectTransform.anchoredPosition = new Vector2(UserField.rectTransform.anchoredPosition.x, position2);
 
@@ -156,7 +193,7 @@ public class FinishLine : MonoBehaviour
                 continueButtonText.text = "Go back";
             }
 
-            if (finalScore > 1430)
+            if (finalScore > score4)
             {
                 UserField.rectTransform.anchoredPosition = new Vector2(UserField.rectTransform.anchoredPosition.x, position1);
 
@@ -186,17 +223,5 @@ public class FinishLine : MonoBehaviour
         }
     }
 
-    /*private void StartAllAudio()
-    {
-
-    }
-
-    private void StopAllAudio()
-    {
-        for (var source : AudioSource in allAudioSources)
-        {
-            source.Stop();
-        }
-    }*/
 }
 

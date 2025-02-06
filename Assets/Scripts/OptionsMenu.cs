@@ -48,6 +48,7 @@ public class OptionsMenu : MonoBehaviour
     {
         //based on https://discussions.unity.com/t/controlling-master-volume-with-one-slider/163184
         AudioListener.volume = mainVolume.value;
+        ChangeQuality();
     }
 
     //music volume see here: https://www.youtube.com/watch?v=G-JUp8AMEx0

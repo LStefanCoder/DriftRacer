@@ -54,7 +54,7 @@ public class EscapeMenu : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene("Main");
     }
-
+    
     public void Resume()
     {
         escapeMenuCanvas.SetActive(false);

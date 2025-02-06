@@ -27,4 +27,9 @@ public class Credits : MonoBehaviour
         main.SetActive(true);
         garage.SetActive(false);
     }
+
+    public void GoBack()
+    {
+        SceneManager.LoadScene("Main");
+    }
 }
