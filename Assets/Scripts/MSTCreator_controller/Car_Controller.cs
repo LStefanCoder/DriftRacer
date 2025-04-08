@@ -194,7 +194,7 @@ public class Car_Controller : MonoBehaviour
 			return false;
 	}
 
-    //OWN CODE!!!
+    //own code
     [Space(15)]
 
     public TMP_Text CurrentScoreText;
@@ -507,10 +507,8 @@ public class Car_Controller : MonoBehaviour
     }
 
     public void Update(){
-        //OWN CODE!!!
+        //own code
         //https://forum.unity.com/threads/wheel-collider-slip-effects.520674/
-        //if (Wheel_)
-        //Debug.Log(Engine_Sound.isPlaying);
 
         //since the two levels have different opponent scores, I assign different values to the variables
 

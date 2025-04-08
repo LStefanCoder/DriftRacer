@@ -45,6 +45,11 @@ public class FinishLine : MonoBehaviour
         StartCoroutine(deactivateInstruction(5));
     }
 
+    //this code is valid for both level 1 and 2
+    //deactivating the instruction text after 5 seconds of the game
+    //based on https://discussions.unity.com/t/how-to-execute-code-after-x-seconds/168749/2
+
+    //run a coroutine which deactivates the instruction
     private IEnumerator deactivateInstruction(int time)
     {
         yield return new WaitForSeconds(time);
@@ -54,14 +59,7 @@ public class FinishLine : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //this code is valid for both level 1 and 2
-        //deactivating the instruction text after 5 seconds of the game
-        //based on https://discussions.unity.com/t/how-to-execute-code-after-x-seconds/168749/2
-
-        //run a corouting which deactivates the instruction
-
-        
-
+     
     }
 
     void Line()

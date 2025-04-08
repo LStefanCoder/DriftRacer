@@ -44,7 +44,7 @@ public class HelpMenu : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        /*if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (escapeMenuCanvas.activeSelf == false)
             {
@@ -54,7 +54,7 @@ public class HelpMenu : MonoBehaviour
                 //resumes the gameplay
                 Time.timeScale = 1;
             }
-        }
+        }*/
     }
 
     //taken from https://discussions.unity.com/t/how-to-stop-all-audio/32919/4

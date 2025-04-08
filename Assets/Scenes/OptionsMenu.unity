@@ -2401,6 +2401,7 @@ GameObject:
   - component: {fileID: 1102641833}
   - component: {fileID: 1102641832}
   - component: {fileID: 1102641834}
+  - component: {fileID: 1102641835}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2555,6 +2556,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainSlider: {fileID: 708680166}
   mixer: {fileID: 24100000, guid: 324c22bed27aa13498150f1e50e54a70, type: 2}
+--- !u!114 &1102641835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102641827}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ba43018290d5c344a5633031ab40e72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 708680166}
+  mixer: {fileID: 24100000, guid: af4fa253b4f8ce04bb6a13f444dc0872, type: 2}
 --- !u!1 &1120611492
 GameObject:
   m_ObjectHideFlags: 0
