@@ -2036,13 +2036,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3ea186a6d096344ae38f3c53de3b1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousButton: {fileID: 0}
-  nextButton: {fileID: 0}
-  play: {fileID: 0}
-  buy: {fileID: 0}
-  priceText: {fileID: 0}
-  carPrices: f4010000f4010000f4010000
-  purchase: {fileID: 8300000, guid: e7c0e5196b6b6194fb3c92cf5cf5f8b0, type: 3}
 --- !u!114 &405737557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2055,9 +2048,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef95112f167e18343b7f17cc0cdf8aa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentCar: 0
-  money: 500
-  carsUnlocked: 010000
 --- !u!1 &439911586
 GameObject:
   m_ObjectHideFlags: 0
@@ -2311,7 +2301,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &507723404
 Transform:
   m_ObjectHideFlags: 0
@@ -8692,7 +8682,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1913555114
 Transform:
   m_ObjectHideFlags: 0
