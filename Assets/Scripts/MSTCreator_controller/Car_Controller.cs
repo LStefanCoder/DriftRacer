@@ -519,18 +519,18 @@ public class Car_Controller : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name == "Level1")
         {
-            score1 = 250;
-            score2 = 570;
-            score3 = 1040;
-            score4 = 1430;
-        }
-
-        else
-        {
             score1 = 1110;
             score2 = 1562;
             score3 = 1875;
             score4 = 2058;
+        }
+
+        else
+        {
+            score1 = 250;
+            score2 = 570;
+            score3 = 1040;
+            score4 = 1430;
         }
 
         if (TotalScoreNumber > score1)
