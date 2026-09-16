@@ -20,35 +20,49 @@ The car can be controlled with the arrow keys and the space key is the handbrake
 
 ## Screenshots
 
-<img src="screenshots/Drifting_1.jpg" alt="Screenshot 1" style="width: 80%;">
+<img src="screenshots/DriftRacerScreenshot_1.jpg" alt="Screenshot 1" style="width: 75%;">
 
-<img src="screenshots/Drifting_2.jpg" alt="Screenshot 2" style="width: 80%;">
+<img src="screenshots/DriftRacerScreenshot_2.jpg" alt="Screenshot 2" style="width: 75%;">
 
-<img src="screenshots/Drifting_3.jpg" alt="Screenshot 3" style="width: 80%;">
+<img src="screenshots/DriftRacerScreenshot_3.jpg" alt="Screenshot 3" style="width: 75%;">
 
-<img src="screenshots/Level1Track.jpg" alt="Screenshot 4" style="width: 80%;">
+<img src="screenshots/DriftRacerScreenshot_4.jpg" alt="Screenshot 4" style="width: 75%;">
 
-<img src="screenshots/Level1Track_3.jpg" alt="Screenshot 5" style="width: 80%;">
+<img src="screenshots/DriftRacerScreenshot_5.jpg" alt="Screenshot 5" style="width: 75%;">
 
-<img src="screenshots/Level1Track_5.jpg" alt="Screenshot 6" style="width: 80%;">
+<img src="screenshots/DriftRacerScreenshot_6.jpg" alt="Screenshot 6" style="width: 75%;">
 
-<img src="screenshots/Level2Buildings.jpg" alt="Screenshot 7" style="width: 80%;">
+<img src="screenshots/DriftRacerScreenshot_7.jpg" alt="Screenshot 7" style="width: 75%;">
 
-<img src="screenshots/Level2Buildings_2.jpg" alt="Screenshot 8" style="width: 80%;">
+<img src="screenshots/DriftRacerScreenshot_8.jpg" alt="Screenshot 8" style="width: 75%;">
 
-<img src="screenshots/Level2Buildings_3.jpg" alt="Screenshot 9" style="width: 80%;">
+<img src="screenshots/DriftRacerScreenshot_9.jpg" alt="Screenshot 9" style="width: 75%;">
 
-<img src="screenshots/Level2Buildings_4.jpg" alt="Screenshot 10" style="width: 80%;">
+<img src="screenshots/DriftRacerScreenshot_10.jpg" alt="Screenshot 10" style="width: 75%;">
 
-<img src="screenshots/Level2Buildings_5.jpg" alt="Screenshot 11" style="width: 80%;">
+<img src="screenshots/Level1Track.jpg" alt="Screenshot 11" style="width: 75%;">
 
-<img src="screenshots/Level2Buildings_6.jpg" alt="Screenshot 12" style="width: 80%;">
+<img src="screenshots/Level1Track_3.jpg" alt="Screenshot 12" style="width: 75%;">
 
-<img src="screenshots/GarageColorMenu.jpg" alt="Screenshot 13" style="width: 80%;">
+<img src="screenshots/Level1Track_5.jpg" alt="Screenshot 13" style="width: 75%;">
 
-<img src="screenshots/HelpMenu.jpg" alt="Screenshot 14" style="width: 80%;">
+<img src="screenshots/Level2Buildings.jpg" alt="Screenshot 14" style="width: 75%;">
 
-<img src="screenshots/OptionsMenu.jpg" alt="Screenshot 15" style="width: 80%;">
+<img src="screenshots/Level2Buildings_2.jpg" alt="Screenshot 15" style="width: 75%;">
+
+<img src="screenshots/Level2Buildings_3.jpg" alt="Screenshot 16" style="width: 75%;">
+
+<img src="screenshots/Level2Buildings_4.jpg" alt="Screenshot 17" style="width: 75%;">
+
+<img src="screenshots/Level2Buildings_5.jpg" alt="Screenshot 18" style="width: 75%;">
+
+<img src="screenshots/Level2Buildings_6.jpg" alt="Screenshot 19" style="width: 75%;">
+
+<img src="screenshots/GarageColorMenu.jpg" alt="Screenshot 20" style="width: 75%;">
+
+<img src="screenshots/HelpMenu.jpg" alt="Screenshot 21" style="width: 75%;">
+
+<img src="screenshots/OptionsMenu.jpg" alt="Screenshot 22" style="width: 75%;">
 
 ## Asset references
 
