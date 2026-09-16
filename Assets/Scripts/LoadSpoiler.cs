@@ -29,7 +29,7 @@ public class LoadSpoiler : MonoBehaviour
             Spoiler2.SetActive(false);
         }
 
-        if (GarageSelectSpoiler.spoilerStatus == 3)
+        if(GarageSelectSpoiler.spoilerStatus == 2)
         {
             Spoiler1.SetActive(false);
             Spoiler2.SetActive(true);

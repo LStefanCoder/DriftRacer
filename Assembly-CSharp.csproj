@@ -59,17 +59,13 @@
   <ItemGroup>
     <Compile Include="Assets\MiniMap\_Scripts\MapObject.cs" />
     <Compile Include="Assets\ArrayModifierComponent\Scripts\Duplicator.cs" />
-    <Compile Include="Assets\IntenseNation\Ultimate Currency Manager\Scripts\ConvertedCurrency.cs" />
     <Compile Include="Assets\Scripts\AudioSettings.cs" />
-    <Compile Include="Assets\IntenseNation\Ultimate Currency Manager\Demo\Scripts\Demo_CurrencyCounter.cs" />
     <Compile Include="Assets\Scripts\MSTCreator_controller\Speedometer_Controller.cs" />
     <Compile Include="Assets\Scripts\LoadEndScreen.cs" />
     <Compile Include="Assets\FlexibleColorPicker\ExampleScene\FCP_ExampleScript.cs" />
-    <Compile Include="Assets\IntenseNation\Ultimate Currency Manager\Scripts\Currency.cs" />
     <Compile Include="Assets\Scripts\Wheels.cs" />
     <Compile Include="Assets\Scripts\MSTCreator_controller\Radio.cs" />
     <Compile Include="Assets\Scripts\LoadingScene.cs" />
-    <Compile Include="Assets\IntenseNation\Ultimate Currency Manager\Demo\Scripts\Demo_CurrencyConverter.cs" />
     <Compile Include="Assets\ArrayModifierComponent\Scripts\FixedCountDuplicator.cs" />
     <Compile Include="Assets\ArrayModifierComponent\Scripts\DuplicateBehaviour.cs" />
     <Compile Include="Assets\ArrayModifierComponent\Scripts\Duplicate.cs" />
@@ -100,15 +96,12 @@
     <Compile Include="Assets\ArrayModifierComponent\Scripts\DuplicatorUtility.cs" />
     <Compile Include="Assets\MiniMap\_Scripts\MiniMapController.cs" />
     <Compile Include="Assets\Scripts\Odometer.cs" />
-    <Compile Include="Assets\IntenseNation\Ultimate Currency Manager\Scripts\CurrencyManager.cs" />
     <Compile Include="Assets\Scripts\MSTCreator_controller\Wheel_Effects.cs" />
     <Compile Include="Assets\Scripts\GarageSelectSpoiler.cs" />
-    <Compile Include="Assets\IntenseNation\Ultimate Currency Manager\Demo\Scripts\Demo.cs" />
     <Compile Include="Assets\Scripts\CameraSwitcher.cs" />
     <Compile Include="Assets\Scripts\BackButton.cs" />
     <Compile Include="Assets\Scripts\EscapeMenu.cs" />
     <Compile Include="Assets\Scripts\GlobalVariables.cs" />
-    <Compile Include="Assets\IntenseNation\Ultimate Currency Manager\Scripts\CurrencyTextManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
