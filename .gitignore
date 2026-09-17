@@ -58,3 +58,10 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# delete assets not compatible with GPL
+/[Aa]ssets/ArrayModifierComponent/
+/[Aa]ssets/FlexibleColorPicker/
+/[Aa]ssets/MiniMap/
+/[Aa]ssets/TextMesh Pro/
+/[Aa]ssets/Fonts/

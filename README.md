@@ -2,11 +2,21 @@
 
 A drift racing game made with Unity with two levels. The target platform is desktop systems.
 
+## License
+
+The code of this game is published under the GPL 3.0 license. 
+
+The game needs three Unity assets published under the Standard Unity Asset Store EULA: Array Modifier Component by Cikoria Studio; Flexible Color Picker by Ward Dehairs; DragNDrop Minimap by Zayed Upal. They are not included due to their incompatibility with GPL. 
+
+The game uses the CineMachine and the TextMesh Pro Unity packages, which are under their respective licenses. These packages are not included. 
+
+The individual 3D assets, UI elements, and sound assets are under their respective licenses listed below. 
+
 ## Building requirements
 - Unity Version: 2022.3.x
 - Blender (at least version 5.0)
 
-Visual Studio is recommended. 
+Visual Studio is recommended for editing the code files. 
 
 ## Running the game
 
@@ -40,29 +50,23 @@ The car can be controlled with the arrow keys and the space key is the handbrake
 
 <img src="screenshots/DriftRacerScreenshot_10.jpg" alt="Screenshot 10" style="width: 75%;">
 
-<img src="screenshots/Level1Track.jpg" alt="Screenshot 11" style="width: 75%;">
+<img src="screenshots/Level2Buildings.jpg" alt="Screenshot 11" style="width: 75%;">
 
-<img src="screenshots/Level1Track_3.jpg" alt="Screenshot 12" style="width: 75%;">
+<img src="screenshots/Level2Buildings_2.jpg" alt="Screenshot 12" style="width: 75%;">
 
-<img src="screenshots/Level1Track_5.jpg" alt="Screenshot 13" style="width: 75%;">
+<img src="screenshots/Level2Buildings_3.jpg" alt="Screenshot 13" style="width: 75%;">
 
-<img src="screenshots/Level2Buildings.jpg" alt="Screenshot 14" style="width: 75%;">
+<img src="screenshots/Level2Buildings_4.jpg" alt="Screenshot 14" style="width: 75%;">
 
-<img src="screenshots/Level2Buildings_2.jpg" alt="Screenshot 15" style="width: 75%;">
+<img src="screenshots/Level2Buildings_5.jpg" alt="Screenshot 15" style="width: 75%;">
 
-<img src="screenshots/Level2Buildings_3.jpg" alt="Screenshot 16" style="width: 75%;">
+<img src="screenshots/Level2Buildings_6.jpg" alt="Screenshot 16" style="width: 75%;">
 
-<img src="screenshots/Level2Buildings_4.jpg" alt="Screenshot 17" style="width: 75%;">
+<img src="screenshots/GarageColorMenu.jpg" alt="Screenshot 17" style="width: 75%;">
 
-<img src="screenshots/Level2Buildings_5.jpg" alt="Screenshot 18" style="width: 75%;">
+<img src="screenshots/HelpMenu.jpg" alt="Screenshot 18" style="width: 75%;">
 
-<img src="screenshots/Level2Buildings_6.jpg" alt="Screenshot 19" style="width: 75%;">
-
-<img src="screenshots/GarageColorMenu.jpg" alt="Screenshot 20" style="width: 75%;">
-
-<img src="screenshots/HelpMenu.jpg" alt="Screenshot 21" style="width: 75%;">
-
-<img src="screenshots/OptionsMenu.jpg" alt="Screenshot 22" style="width: 75%;">
+<img src="screenshots/OptionsMenu.jpg" alt="Screenshot 19" style="width: 75%;">
 
 ## Asset references
 
@@ -158,12 +162,13 @@ Kenney UI Pack under the Creative Commons Zero license (https://kenney.nl/assets
 
 Keyboard Computer Hardware Device 7256457 under the Pixabay Content License (https://pixabay.com/vectors/keyboard-computer-hardware-device-7256457/)
 
-Odometer from Pixabay (https://pixabay.com/vectors/tachometer
+Odometer from Pixabay under the Pixabay Content License (https://pixabay.com/vectors/tachometer
 -gauge-hour-kilometers-152602/)
 
 ### Textures
 
 Textures from AmbientCG (ambientcg.com) under the Creative Commons Zero 1.0 License
+
 Rootiou Park from Polyhaven under the Creative Commons Zero 1.0 License 
 
 ### Sounds
