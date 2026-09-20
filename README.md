@@ -4,9 +4,11 @@ A drift racing game made with Unity with two levels. The target platform is desk
 
 ## License
 
-The code of this game is published under the GPL 3.0 license. 
+The original code of this game is published under the GPL 3.0 license. (https://www.gnu.org/licenses/gpl-3.0.html)
 
 The game needs three Unity assets published under the Standard Unity Asset Store EULA: Array Modifier Component by Cikoria Studio; Flexible Color Picker by Ward Dehairs; DragNDrop Minimap by Zayed Upal. They are not included due to their incompatibility with GPL. 
+
+The scripts in the "MSTCreator_controller" folder are made by Muhammad-Sarem-Tahir and are under the MIT license. (https://opensource.org/license/mit) They have been modified in this project. 
 
 The game uses the CineMachine and the TextMesh Pro Unity packages, which are under their respective licenses. These packages are not included. 
 
@@ -181,7 +183,7 @@ Rootiou Park from Polyhaven under the Creative Commons Zero 1.0 License
 
 Automobile Horn by Universfield under the Pixabay Content License (https://pixabay.com/sound-effects/automobile-horn-153260/)
 
-### Unity packages
+### Unity packages and other scripts
 
 CineMachine (Unity-made package)
 
